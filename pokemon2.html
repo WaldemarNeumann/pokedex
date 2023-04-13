@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts2.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Pokedex</title>
+    <script src="script2.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/Pokemon-Pokeball.png">
+
+</head>
+
+<body id="body" onload="loadNextPokemonList()">
+
+    <header>
+        <div class="hero">
+            <img src="img/Pokemon-Pokeball.png">
+            <h1>Pokedex</h1>
+        </div>
+        <input placeholder="SEARCH" class="search-field" type="text" id="search" onkeyup="filterPokemon()">
+    </header>
+
+    <div id="container-all-pokemon">
+
+    </div>
+    <div id="showPokedex" onclick="closePokedex()" class="parent-container-pokedex d-none">
+        <div onclick="notClose(event)" class="container-pokedex">
+            <p id="close-button"></p>
+            <div class="pokedex" id="pokedex">
+                <div class="container-stats">
+                    <h1 id="pokemonName">Name</h1>
+                    <span id="pokemonNumber"></span>
+                    <span class="type" id="type-1"></span>
+                    <span id="height"></span>
+                    <span id="weight"></span>
+                </div>
+                <img id="imgPokemon" class="img-pokemon" />
+            </div>
+            <div class="info-container text-bold">
+                <div class="stats-alignment">
+                    <span>hp</span>
+                    <div class="container-skillbar">
+                        <div id="hp" class="skills"></div>
+                    </div>
+                </div>
+                <div class="stats-alignment">
+                    <span>attack</span>
+                    <div class="container-skillbar">
+                        <div id="attack" class="skills"></div>
+                    </div>
+                </div>
+                <div class="stats-alignment">
+                    <span>defense</span>
+                    <div class="container-skillbar">
+                        <div id="defense" class="skills"></div>
+                    </div>
+                </div>
+                <div class="stats-alignment">
+                    <span>special-attack</span>
+                    <div class="container-skillbar">
+                        <div id="special-attack" class="skills"></div>
+                    </div>
+                </div>
+                <div class="stats-alignment">
+                    <span>special-defense</span>
+                    <div class="container-skillbar">
+                        <div id="special-defense" class="skills"></div>
+                    </div>
+                </div>
+                <div class="stats-alignment">
+                    <span>speed</span>
+                    <div class="container-skillbar">
+                        <div id="speed" class="skills"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+    background-image: url(img/45699.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.search-field {
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border: grey;
+    color: grey;
+    border-radius: 10px;
+}
+
+.search-field:focus {
+    outline: rgb(85, 82, 82);
+    background-color: rgb(104, 102, 102);
+    color: white;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header img {
+    width: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: grey;
+}
+
+.close-button {
+    color: white;
+    cursor: pointer;
+    border: solid 1px white;
+    padding: 8px;
+    position: absolute;
+    top: 13px;
+    right: 22px;
+    border-radius: 360px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.pokemon-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.298);
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.header-small-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.type-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#container-all-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.parent-container-pokedex {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.container-pokedex {
+    position: relative;
+    width: 400px;
+    height: fit-content;
+}
+
+.pokedex {
+    height: 50vh;
+    color: white;
+    display: flex;
+    padding: 24px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.info-container {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: -130px;
+    height: fit-content;
+    padding: 24px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-pokemon {
+    position: absolute;
+    right: 15px;
+    top: 82px;
+    width: 200px;
+    height: 200px;
+}
+
+.container-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-stats h1 {
+    color: white;
+}
+
+.container-stats span {
+    margin-bottom: 10px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.container-skillbar {
+    width: 250px;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-right: 10px;
+    color: white;
+    /* White text color */
+}
+
+.stats-alignment {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-alignment span {
+    margin-bottom: 4px;
+}
+
+.fire {
+    background-color: #FB6c6c;
+}
+
+.grass {
+    background-color: #78c850;
+}
+
+.water {
+    background-color: #6890f0;
+}
+
+.bug {
+    background-color: #a8b820;
+}
+
+.normal {
+    background-color: #a8a878;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.electric {
+    background-color: #f8d030;
+}
+
+.ground {
+    background-color: #e0c068;
+}
+
+.fairy {
+    background-color: #ee99ac;
+}
+
+.fighting {
+    background-color: #c03028;
+}
+
+.psychic {
+    background-color: #f85888;
+}
+
+.rock {
+    background-color: #b8a038;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.ice {
+    background-color: #98d8d8;
+}
+
+.dragon {
+    background-color: #7038f8;
+}
+
+.img-small-card {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 4px;
+    right: 23px;
+}
+
+.type-small-card {
+    margin: 10px;
+    border: solid white 1px;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
